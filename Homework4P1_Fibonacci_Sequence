@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+  int main() {
+  int x;
+  int a=0, b=1, c =0, d=0;
+  int sum = 0;
+
+  cout<<"Enter number of elements : ";
+  cin>> x;
+  while(x>d){
+  c = a + b;
+  a = b;
+  b = c;
+  d = d + 1;
+  if (c % 2 == 0){
+  sum = sum + c;
+}
+  cout<<c<<" ";
+}
+  cout<<endl;
+  cout<<"Sum of even numbers in Fibonacci Sequence: "<<sum<<endl;
+  return 0;
+}
