@@ -1,1 +1,44 @@
+//authorL Noraim Nunez, edited 23Feb2020; 
+//Finding the nth prime number
 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   int check,n=0,c=0;
+
+// Asking the user for an input of a prime number 
+   cout<<"Enter which prime number you want to find: ";
+   cin>>n;
+   
+// For loop to get integers from 2 to 10 million.
+  for(int i=2;i<=10000000;i++)
+  {
+    check=0;
+    
+// For loop to get integers from 2 to half the value of i.
+    for(int j=2;j<=i/2;j++)
+    {
+// If loop to check if the integers are prime numbers.
+        if(i%j==0)
+        {
+          check=1;
+           break;
+        }
+    }
+// Applying if loops to get the nth prime number as specified by n.
+  if(check==0)
+    c++;
+
+      if(c==n)
+     {
+// Printing out the nth prime number.
+      cout<<"Your prime number is: " <<i<<endl;
+      break;
+     }
+ }
+
+return 0;
+
+}
