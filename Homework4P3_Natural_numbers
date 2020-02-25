@@ -1,1 +1,41 @@
+// Author: Noraim Nunez, edited 23Feb2020
+// Finding the difference between the sum of the squares-vice versa- for the first 100 natural numbers 
+#include <iostream>
+#include <math.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+// Declaring integers
+  int sumsquare = 0;
+  int squaresum = 0;
+  int sum = 0;
+  int dif;
+  int square;
+
+// For loop to get integers from 1 to 100.
+  for (int i=1; i<=100; i++)
+  {
+// For square of integers: calculating integers from 1 to 100 
+    square = i*i;
+
+// Summing the squares.
+    sumsquare = sumsquare + square;
+// Summing the integers.
+    sum = sum + i;
+  }
+// Squaring the sum of the integers.
+  squaresum = sum*sum;
+
+// Calculating the difference of the square of the sum and the sum of the squares 
+  dif = squaresum - sumsquare;
+// Printing out our values found.
+  cout<<"The sum of the squares is : "<<sumsquare<<endl;
+  cout<<"The square of the sum is : "<<squaresum<<endl;
+  cout<<"The difference of these terms is : "<<dif<<endl;
+
+return 0;
+}
 
