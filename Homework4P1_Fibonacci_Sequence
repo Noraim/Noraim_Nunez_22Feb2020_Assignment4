@@ -1,13 +1,19 @@
+// Author: Noraim Nunez, edited 22Feb2020
+// Creating the pattern of the Fibonacci sequence, specifically calling its even values 
 #include <iostream>
 
 using namespace std;
   int main() {
+ 
+ //Declaring integers 
   int x;
   int a=0, b=1, c =0, d=0;
   int sum = 0;
 
+ // Printing output for user to input any value 
   cout<<"Enter number of elements : ";
   cin>> x;
+  // While statement in respect to Fibonacci sequence calculation 
   while(x>d){
   c = a + b;
   a = b;
@@ -18,6 +24,7 @@ using namespace std;
 }
   cout<<c<<" ";
 }
+  // Printing out even values from the sequence 
   cout<<endl;
   cout<<"Sum of even numbers in Fibonacci Sequence: "<<sum<<endl;
   return 0;
